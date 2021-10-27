@@ -59,7 +59,10 @@ function Server(config, callback) {
 	}
 
 	app.use(function (req, res, next) {
-		ipfilter(config.ipWhitelist, { mode: config.ipWhitelist.length === 0 ? "deny" : "allow", log: false })(req, res, function (err) {
+		ipfilter(config.ipWhitelist, {
+			mode: config.ipWhitelist.length === 0 ? "deny" : "allow",
+			log: false
+		})(req, res, function (err) {
 			if (err === undefined) {
 				return next();
 			}
@@ -84,15 +87,19 @@ function Server(config, callback) {
 		res.send(config);
 	});
 
+	app.get("/config.js", function (req, res) {
+		res.type(".js");
+
+		res.send(`window.config = ${JSON.stringify(config)}`);
+	});
+
 	app.get("/", function (req, res) {
-		let html = fs.readFileSync(path.resolve(`${global.root_path}/index.html`), { encoding: "utf8" });
+		let html = fs.readFileSync(path.resolve(`${global.root_path}/index.html`), {
+			encoding: "utf8"
+		});
 		html = html.replace("#VERSION#", global.version);
 
-		let configFile = "config/config.js";
-		if (typeof global.configuration_file !== "undefined") {
-			configFile = global.configuration_file;
-		}
-		html = html.replace("#CONFIG_FILE#", configFile);
+		html = html.replace("#CONFIG_FILE#", "/config.js");
 
 		res.send(html);
 	});

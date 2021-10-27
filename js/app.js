@@ -67,6 +67,7 @@ function App() {
 		try {
 			fs.accessSync(configFilename, fs.F_OK);
 			const c = require(configFilename);
+
 			checkDeprecatedOptions(c);
 			const config = Object.assign(defaults, c);
 			callback(config);

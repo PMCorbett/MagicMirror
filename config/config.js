@@ -7,7 +7,10 @@
  * see https://docs.magicmirror.builders/getting-started/configuration.html#general
  * and https://docs.magicmirror.builders/modules/configuration.html
  */
-const { privateCalenders, metOffice } = require("./secrets.js");
+const {
+	privateCalenders,
+	metOffice,
+} = require(`${__dirname}/../config/secrets`);
 
 let config = {
 	address: "localhost", // Address to listen on, can be:
