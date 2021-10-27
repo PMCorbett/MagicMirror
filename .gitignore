@@ -70,7 +70,7 @@ Temporary Items
 # Ignore users config file but keep the sample.
 /config/*
 !/config/config.js.sample
-
+!/config/config.js
 # Vim
 ## swap
 [._]*.s[a-w][a-z]
@@ -80,3 +80,7 @@ Temporary Items
 *.orig
 *.rej
 *.bak
+
+# backgrounds
+/backgrounds/*
+!/backgrounds/.gitkeep
