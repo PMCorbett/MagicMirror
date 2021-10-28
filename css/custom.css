@@ -4,6 +4,11 @@
 
 .CX2 .event {
   box-shadow: 0 0px 3px 0px rgba(100, 100, 100, 0.5);
+  padding: 0px;
+}
+
+.CX2 .eventTime * {
+  padding-left: 0;
 }
 
 .CX2 .event.dynata {
