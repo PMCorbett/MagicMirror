@@ -1,0 +1,73 @@
+.weeksmark {
+  display: none;
+}
+
+.CX2 .event {
+  box-shadow: 0 0px 3px 0px rgba(100, 100, 100, 0.5);
+}
+
+.CX2 .event.dynata {
+  background: #28546c;
+}
+
+.CX2 .event.corbett {
+  background: #28784d;
+}
+
+.CX2 .event.holiday {
+  background: #333;
+}
+
+.CX2 .slot > .slotContent {
+  background: none;
+}
+
+.CX2 .weekSlot.showWeekends .cellSlot {
+  border: 1px solid rgba(75, 75, 75, 0.4);
+  margin: 1px;
+}
+
+.CX2 .weekSlot.showWeekends .cellSlot.thismonth {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.CX2 .slot .slotHeader {
+  background-color: rgba(75, 75, 75, 0.2);
+}
+
+.CX2 .slot.thismonth .slotHeader {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.CX2 .weekSlot .eventTitle {
+  overflow: visible;
+  text-overflow: unset;
+  white-space: initial;
+  font-size: 12px;
+}
+.CX2 .weekSlot .eventTime * {
+  font-size: 12px;
+}
+.CX2 .weekSlot .eventMain {
+  height: auto;
+  padding: 2px;
+  overflow: visible;
+  text-overflow: unset;
+  white-space: initial;
+  font-size: 11px;
+  color: #fff;
+}
+.slot.thisyear.thismonth.thisweek.today.cellSlot {
+  background: rgba(255, 255, 255, 0.3);
+}
+div#SPOTIFY.inactive {
+  display: none;
+}
+
+div#SPOTIFY_BACKGROUND {
+  background: none;
+  filter: none;
+  background-image: none !important;
+}
+.module.weather * {
+  text-shadow: 2px 2px 3px #000;
+}
