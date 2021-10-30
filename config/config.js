@@ -116,6 +116,28 @@ let config = {
 				colored: true,
 			},
 		},
+		{
+		module: "newsfeed",
+		position: "bottom_center",	// This can be any of the regions. Best results in center regions.
+		config: {
+			// The config property is optional.
+			// If no config is set, an example calendar is shown.
+			// See 'Configuration options' for more information.
+
+			feeds: [
+				{
+					title: "Braingle",
+					url: "https://www.braingle.com/rss_teasers.php",
+				},
+			],
+			showSourceTitle: false,
+			showPublishDate: false,
+			showDescription: true,
+			truncDescription: false,
+			maxNewsItems: 1,
+			updateInterval: 50 * 60 * 1000,
+		}
+	}
 	],
 };
 

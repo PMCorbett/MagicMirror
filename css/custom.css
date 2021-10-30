@@ -76,3 +76,6 @@ div#SPOTIFY_BACKGROUND {
 .module.weather * {
   text-shadow: 2px 2px 3px #000;
 }
+.newsfeed-title {
+  display: none;
+}
