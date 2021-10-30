@@ -80,10 +80,10 @@ div#SPOTIFY_BACKGROUND {
   display: none;
 }
 .newsfeed-desc {
-  font-size: 14px;
+  font-size: 16px;
   position: relative;
   color: #fff;
-  top: 100px;
+  top: 200px;
 }
 .newsfeed-desc a {
   color: #fff;
