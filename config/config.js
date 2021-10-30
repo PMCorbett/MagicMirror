@@ -119,7 +119,7 @@ let config = {
 		},
 		{
 		module: "newsfeed",
-		position: "bottom_center",	// This can be any of the regions. Best results in center regions.
+		position: "lower_third",	// This can be any of the regions. Best results in center regions.
 		config: {
 			// The config property is optional.
 			// If no config is set, an example calendar is shown.
