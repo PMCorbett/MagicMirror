@@ -56,7 +56,8 @@ let config = {
 		// },
 		{
 			module: "MMM-CalendarExt2",
-			updateInterval: 1000 * 60 * 10,
+			updateInterval: 6000000,
+			rotateInterval: 0,
 			config: {
 				calendars: [
 					...privateCalenders,
