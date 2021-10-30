@@ -84,3 +84,7 @@ div#SPOTIFY_BACKGROUND {
   font-size: 14px;
   position: relative;
 }
+.newsfeed-desc a {
+  color: #fff;
+  text-decoration: none;
+}
