@@ -21,7 +21,7 @@
                             {% if config.truncDescription %}
                                 {{ item.description | truncate(config.lengthDescription) }}
                             {% else %}
-                                {{ item.description }}
+                                {{ item.description | safe }}
                             {% endif %}
                         </div>
                     {% endif %}
@@ -48,7 +48,7 @@
                     {% if config.truncDescription %}
                         {{ description | truncate(config.lengthDescription) }}
                     {% else %}
-                        {{ description }}
+                        {{ description | safe }}
                     {% endif %}
                 </div>
             {% endif %}

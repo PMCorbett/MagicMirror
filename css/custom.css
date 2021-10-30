@@ -79,3 +79,8 @@ div#SPOTIFY_BACKGROUND {
 .newsfeed-title {
   display: none;
 }
+.newsfeed-desc {
+  top: -200px;
+  font-size: 14px;
+  position: relative;
+}
