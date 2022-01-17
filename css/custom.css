@@ -89,3 +89,32 @@ div#SPOTIFY_BACKGROUND {
   color: #fff;
   text-decoration: none;
 }
+
+.CX2 .event.bins {
+  background: none;
+  display: flex;
+  box-shadow: none;
+  justify-content: flex-end;
+}
+.CX2 .event.bins .eventMain {
+  display: none;
+}
+.CX2 .event.bins[data-title="Black bin collection"]:before {
+  content: url(blackbin.png);
+}
+.CX2 .event.bins[data-title="Blue lidded and brown bin collection"] {
+}
+
+.CX2 .event.bins[data-title="Blue lidded and brown bin collection"]:before {
+  content: url(blueandbrownbin.png);
+}
+.CX2 .event.bins[data-title="Brown bin collection"] {
+}
+.CX2 .event.bins[data-title="Brown bin collection"]:before {
+  content: url(brownbin.png);
+}
+.CX2 .event.bins[data-title="Blue bin collection"] {
+}
+.CX2 .event.bins[data-title="Blue bin collection"]:before {
+  content: url(bluebin.png);
+}

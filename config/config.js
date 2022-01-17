@@ -67,6 +67,12 @@ let config = {
 						name: "UK Holidays",
 						className: "holiday",
 					},
+					{
+						url:
+							"https://www.hinckley-bosworth.gov.uk/bin-collection-feed?round=REFUSEW2FRI",
+						name: "Bins",
+						className: "bins",
+					},
 				],
 				views: [
 					{
